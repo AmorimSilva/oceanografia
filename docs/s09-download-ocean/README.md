@@ -1,0 +1,40 @@
+# Script: s09_download_ocean.py
+
+## Arquivo-fonte
+- oceanografia/scripts/s09_download_ocean.py
+
+## O que faz
+- Baixa dados oceanograficos e gera mapas de temperatura da superficie do mar.
+
+## Requisitos
+- Python 3.11+
+- numpy
+- matplotlib
+- cartopy
+- netCDF4
+- rasterio
+- boto3
+- scikit-image
+- Pillow
+
+## Variaveis a serem alteradas
+- BASE_EXTENT
+- LOOKBACK_DAYS
+- FIG_SIZE_INSTAGRAM
+- SATELLITE_ZOOM
+
+## Passo a passo para execucao
+1. Ative o ambiente do projeto (venv ou conda).
+2. Ajuste as variaveis listadas acima conforme sua area e periodo.
+3. Rode o comando abaixo na raiz do repositorio.
+4. Confira os arquivos gerados no diretorio de output do modulo.
+
+## Comando pronto
+```powershell
+python "oceanografia/scripts/s09_download_ocean.py"
+```
+
+## Exemplos de resultado
+- oceanografia/output/TSM/TSM_anim_20260301_20260330.gif
+- oceanografia/output/TSM/TSM_20260329.png
+- oceanografia/output/TSM/TSM_20260328.png
